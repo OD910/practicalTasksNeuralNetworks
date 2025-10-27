@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-from PIL import Image  # <--- ВОТ НОВЫЙ ИМПОРТ
+from PIL import Image  
 
 # 1. Загрузка и подготовка данных
 print("Загрузка данных MNIST...")
