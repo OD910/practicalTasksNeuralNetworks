@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-from PIL import Image
+from PIL import Image  
 
 # 1. Загрузка и подготовка данных
 print("Загрузка данных MNIST...")
@@ -114,7 +114,7 @@ def classify_custom_image(model_to_use, image_path):
         digit = np.argmax(prediction)
         confidence = np.max(prediction) * 100
 
-        print(f"\n Классификация файла: {image_path} ")
+        print(f"\n--- Классификация файла: {image_path} ---")
         print(f"Предсказанная цифра: {digit}")
         print(f"Уверенность: {confidence:.2f}%")
 
